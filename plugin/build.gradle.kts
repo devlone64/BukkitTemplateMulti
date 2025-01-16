@@ -3,8 +3,8 @@ plugins {
     id("com.github.johnrengelman.shadow").version("7.1.2")
 }
 
-group = "${properties["PROJECT_GROUP"]}"
-version = "${properties["PROJECT_VERSION"]}"
+group = "io.gitlab.lone64.template"
+version = "1.0.0"
 
 dependencies {
     implementation(project(":api"))

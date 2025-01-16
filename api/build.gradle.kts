@@ -4,8 +4,8 @@ plugins {
     id("com.github.johnrengelman.shadow").version("7.1.2")
 }
 
-group = "${properties["PROJECT_GROUP"]}"
-version = "${properties["PROJECT_VERSION"]}"
+group = "io.gitlab.lone64.template.api"
+version = "1.0.0"
 
 tasks.shadowJar {
     archiveFileName.set("api-${version}-release.jar")

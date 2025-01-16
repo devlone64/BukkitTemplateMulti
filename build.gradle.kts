@@ -2,7 +2,7 @@ plugins {
     id("java")
 }
 
-group = "${properties["PROJECT_GROUP"]}"
+group = "io.gitlab.lone64.template"
 
 subprojects {
     apply(plugin = "java")
@@ -11,7 +11,7 @@ subprojects {
         mavenCentral()
         maven("https://jitpack.io")
         maven("https://libraries.minecraft.net/")
-        maven("https://repo.repsy.io/mvn/lone64/releases/")
+        maven("https://maven.lone64.dev/releases")
         maven("https://repo.codemc.io/repository/maven-snapshots/")
         maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
     }
