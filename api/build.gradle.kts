@@ -8,7 +8,7 @@ group = "io.gitlab.lone64.template.api"
 version = "1.0.0"
 
 tasks.shadowJar {
-    archiveFileName.set("api-${version}-release.jar")
+    archiveFileName.set("template-api-${version}.jar")
 }
 
 publishing {

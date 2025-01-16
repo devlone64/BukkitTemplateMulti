@@ -11,5 +11,5 @@ dependencies {
 }
 
 tasks.shadowJar {
-    archiveFileName.set("template-${version}-release.jar")
+    archiveFileName.set("template-bukkit-${version}.jar")
 }
