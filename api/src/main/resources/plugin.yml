@@ -1,4 +1,0 @@
-name: api
-version: '1.0.0'
-main: io.gitlab.lone64.api.Api
-api-version: '1.21'

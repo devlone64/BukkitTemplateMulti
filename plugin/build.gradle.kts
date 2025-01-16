@@ -11,5 +11,5 @@ dependencies {
 }
 
 tasks.shadowJar {
-    archiveFileName.set("${properties["PROJECT_NAME"]}-${version}-release.jar")
+    archiveFileName.set("template-${version}-release.jar")
 }

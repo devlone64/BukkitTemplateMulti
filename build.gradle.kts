@@ -4,29 +4,25 @@ plugins {
 
 group = "${properties["PROJECT_GROUP"]}"
 
-allprojects {
+subprojects {
     apply(plugin = "java")
 
     repositories {
         mavenCentral()
         maven("https://jitpack.io")
         maven("https://libraries.minecraft.net/")
-        maven("https://repo.codemc.io/repository/maven-public/")
-        maven("https://papermc.io/repo/repository/maven-public/")
-        maven("https://oss.sonatype.org/content/repositories/snapshots/")
+        maven("https://repo.repsy.io/mvn/lone64/releases/")
+        maven("https://repo.codemc.io/repository/maven-snapshots/")
         maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
-        maven("https://nexus.iridiumdevelopment.net/repository/maven-releases/")
     }
 
     dependencies {
-        compileOnly("org.projectlombok", "lombok", "1.18.32")
-        annotationProcessor("org.projectlombok", "lombok", "1.18.32")
+        compileOnly("org.projectlombok:lombok:1.18.32")
+        compileOnly("io.gitlab.lone64:mcframework-api:1.0.0")
+        compileOnly("org.spigotmc:spigot-api:1.20.4-R0.1-SNAPSHOT")
 
-        compileOnly("net.kyori", "adventure-api", "4.13.0")
-        compileOnly("net.kyori", "adventure-text-serializer-legacy", "4.13.0")
-
-        compileOnly("com.mojang", "authlib", "6.0.54")
-        compileOnly("org.spigotmc", "spigot-api", "${properties["MINECRAFT_VERSION"]}-R0.1-SNAPSHOT")
+        // Annotation Processors
+        annotationProcessor("org.projectlombok:lombok:1.18.32")
     }
 }
 

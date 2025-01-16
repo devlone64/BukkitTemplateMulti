@@ -5,8 +5,15 @@ out/
 # Gradle
 build/
 .gradle/
-
 gradle.properties
+
+# api
+api/build/
+api/gradle.properties
+
+# plugin
+plugin/build/
+plugin/gradle.properties
 
 # Other
 COMMIT.txt
