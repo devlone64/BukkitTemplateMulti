@@ -1,0 +1,4 @@
+name: plugin
+version: '1.0.0'
+main: io.gitlab.lone64.plugin.Plugin
+api-version: '1.21'
